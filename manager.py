@@ -64,7 +64,7 @@ while True:
             clr()
             print(f'\n{lg} [*] Logging in from new accounts\n')
             for number in new_accs:
-                c = TelegramClient(f'sessions/{number}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
+                c = TelegramClient(f'sessions/{number}', 6871874, '4669477e3e3e51742054a03d638ca6d9')
                 c.start(number)
                 print(f'{lg}[+] Login successful')
                 c.disconnect()
@@ -87,7 +87,7 @@ while True:
         else:
             for account in accounts:
                 phone = str(account[0])
-                client = TelegramClient(f'sessions/{phone}', 6442605 , 'b374178def0c9b8b34444b85f3ff1d69')
+                client = TelegramClient(f'sessions/{phone}', 6871874, '4669477e3e3e51742054a03d638ca6d9')
                 client.connect()
                 if not client.is_user_authorized():
                     try:
