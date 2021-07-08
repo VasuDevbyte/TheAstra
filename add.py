@@ -170,7 +170,7 @@ adding_status = 0
 approx_members_count = 0
 for acc in to_use:
     stop = index + 60
-    c = TelegramClient(f'sessions/{acc[0]}', 6871874 , '4669477e3e3e51742054a03d638ca6d9')
+    c = TelegramClient(f'sessions/{acc[0]}', 6871874, '4669477e3e3e51742054a03d638ca6d9')
     c.start()
     acc_name = c.get_me().first_name
     print(f'{plus}{grey} User: {cy}{acc_name}{lg} -- {cy}Session started ')
